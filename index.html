@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exchange Rate app</title>
+    <script
+      src="https://kit.fontawesome.com/bc303aca4d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Exchange Rate App</h1>
+      <p>Check latest currency exchange rate</p>
+      <div class="app">
+        <div class="section-one">
+          <input type="number" id="amount-one" value="1" />
+          <select id="currency-one">
+            <option value="PLN" selected>PLN</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
+            <option value="CHF">CHF</option>
+          </select>
+        </div>
+        <button class="swap">
+          <i class="fas fa-retweet"></i>
+        </button>
+        <div class="section-two">
+          <input type="number" id="amount-two" disabled />
+          <select id="currency-two">
+            <option value="PLN">PLN</option>
+            <option value="USD">USD</option>
+            <option value="GBP" selected>GBP</option>
+            <option value="EUR">EUR</option>
+            <option value="CHF">CHF</option>
+          </select>
+        </div>
+      </div>
+      <p class="rate-info">1 = 0.2</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

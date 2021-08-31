@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: rgb(238, 238, 238);
+  background: linear-gradient(135deg, rgb(4, 4, 4) 0%, rgb(26, 31, 36) 100%);
+}
+
+.wrapper {
+  padding: 50px;
+  width: 50%;
+  background: linear-gradient(135deg, rgb(28, 28, 31) 0%, rgb(20, 21, 22) 100%);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 3px 5px 8px rgb(68, 69, 85);
+}
+
+.wrapper h1 {
+  margin: 10px 0px;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  background: -webkit-linear-gradient(rgb(54, 253, 60), rgb(10, 192, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wrapper p {
+  margin: 20px 0px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  background: -webkit-linear-gradient(rgb(46, 196, 51), rgb(12, 206, 1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app input {
+  width: 80%;
+  font-size: 3rem;
+  border-radius: 10px;
+}
+
+.app input,
+.app select {
+  background: none;
+  border: none;
+  color: rgb(47, 189, 40);
+  text-align: center;
+}
+
+.app input:focus,
+.app select:focus {
+  outline: none;
+  color: rgb(61, 255, 51);
+}
+
+.app select {
+  padding: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.app option {
+  color: rgb(10, 192, 0);
+}
+
+.section-one,
+.section-two {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.swap {
+  align-self: flex-end;
+  margin: 10px;
+  padding: 5px 30px;
+  color: rgb(41, 41, 41);
+  background: linear-gradient(
+    45deg,
+    rgba(1, 215, 49, 1) 1%,
+    rgba(0, 80, 154, 1) 100%
+  );
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.rate-info {
+  margin: 20px 0px;
+  position: relative;
+}
+
+@media (max-width: 970px) {
+  .wrapper {
+    width: 75%;
+    padding: 10px;
+  }
+  .app {
+    flex-flow: column nowrap;
+  }
+
+  .swap {
+    align-self: center;
+    padding: 5px 100px;
+    margin: 20px 0px;
+  }
+
+  .rate-info::before {
+    content: "";
+    width: 185px;
+    height: 2px;
+    background-color: rgb(10, 192, 0);
+    position: absolute;
+    top: -10px;
+  }
+}
