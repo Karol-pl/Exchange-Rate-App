@@ -6,7 +6,7 @@ const swapBtn = document.querySelector(".swap");
 const rateInfo = document.querySelector(".rate-info");
 
 const calc = () => {
-  fetch(`http://api.nbp.pl/api/exchangerates/tables/a/`)
+  fetch(`https://api.nbp.pl/api/exchangerates/tables/a/`)
     .then((res) => res.json())
     .then((data) => {
       const currency1 = currencyOne.value;
